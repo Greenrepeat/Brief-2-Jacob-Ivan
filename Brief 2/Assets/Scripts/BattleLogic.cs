@@ -46,6 +46,7 @@ public class BattleLogic : MonoBehaviour
 
     private void InstantiateRandomCharactersOntoSpawnPositions( CharacterStats[] characterLibrary, Transform[] spawnPositions, List<CharacterStats> activeList )
     {
+        int characterLibraryLength = characterLibrary.Length;
         /*
             Method: private void InstantiateRandomCharactersOntoSpawnPositions( CharacterStats[] characterLibrary, Transform[] spawnPositions, List<CharacterStats> activeList )
             Description: Instantiates a random character from the character library at each of the spawnPositions. Instantiated characters are added to the active list.
@@ -66,15 +67,19 @@ public class BattleLogic : MonoBehaviour
 
             // Instantiate a random character from the characterLibrary (*See 'Instantiate' and 'Random.Range' in the Unity Scripting Reference for more)
             // HINT: GameObject newCharacter = ...
+            GameObject newCharacter = Instantiate(characterLibrary[Random.Range(0, characterLibraryLength)].gameObject, sp);
 
             // Fix the new character GameObject name (eg remove the "(Clone)" Unity puts at the end)  Uncomment the next line...
             //newCharacter.name = newCharacter.name.Replace( "(Clone)", "" );
+            newCharacter.name = newCharacter.name.Replace("(Clone)", "");
 
             // Position the new character at the current loop spawn position.
             // HINT: newCharacter.transform.position = ...
+            newCharacter.transform.position = sp.position;
 
             // Add the new character to the passed in active List.
             //activeList.Add( newCharacter.GetComponent<CharacterStats>() );
+            activeList.Add(newCharacter.GetComponent<CharacterStats>());
         }
     }
 
