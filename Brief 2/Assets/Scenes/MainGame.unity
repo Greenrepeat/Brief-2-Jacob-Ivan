@@ -895,8 +895,8 @@ MonoBehaviour:
   monsterLibrary:
   - {fileID: 8767433252133024603, guid: 5f4714565c2c5f542bbce71158dd7f09, type: 3}
   - {fileID: 1728764422300266428, guid: f7499044a0c2ef540b91cad474b85fb2, type: 3}
-  - {fileID: 1728764422300266428, guid: f7499044a0c2ef540b91cad474b85fb2, type: 3}
-  - {fileID: 1728764422300266428, guid: f7499044a0c2ef540b91cad474b85fb2, type: 3}
+  - {fileID: 6068641396083020417, guid: beefe577ad949494881a8069ae25576d, type: 3}
+  - {fileID: 6316280652398846374, guid: 3d3089648986f3d4a8133ff2a5ee1cb6, type: 3}
   - {fileID: 1728764422300266428, guid: f7499044a0c2ef540b91cad474b85fb2, type: 3}
   heroSpawnPoints:
   - {fileID: 1036653964}
