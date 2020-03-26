@@ -116,20 +116,39 @@ public class BattleLogic : MonoBehaviour
         }
 
         // TODO: Randomly select a hero and monster from the active heroes ( eg choosing one hero and one monster per round )
-        CharacterStats hero = this.activeHeroes[ Random.Range( 0, this.activeHeroes.Count ) ];
-        CharacterStats monster = this.activeMonsters[Random.Range(0, this.activeMonsters.Count)];
+        CharacterStats selectedHero = this.activeHeroes[ Random.Range( 0, this.activeHeroes.Count ) ];
+        CharacterStats selectedMonster = this.activeMonsters[Random.Range(0, this.activeMonsters.Count)];
 
         // Dull the color of all active characters.
         this.SetAllActiveCharacterColors( Color.gray );
 
         // Set the randomly selected, fighting hero and monster characters back to white ( eg Makes it easier to see which characters are fighting )
-        hero.GetComponent<SpriteRenderer>().color = Color.white;
-        //monster.GetComponent<SpriteRenderer>().color = Color.white;
+        selectedHero.GetComponent<SpriteRenderer>().color = Color.white;
+        selectedMonster.GetComponent<SpriteRenderer>().color = Color.white;
 
         // Some text that will be
         string log = "";
 
 
+        if(selectedHero.health > selectedMonster.health)
+        {
+            selectedMonster.TakeDamage(selectedHero.damage);
+            ouputLog.OutputText("The " + selectedHero.name + " hits the " + selectedMonster.name + " for " + selectedHero.damage + " damage! It has " + selectedMonster.health + " HP remaining");
+        }
+        else
+        {
+            selectedHero.TakeDamage(selectedMonster.damage);
+            ouputLog.OutputText("The " + selectedMonster.name + " hits the " + selectedHero.name + " for " + selectedMonster.damage + " damage! It has " + selectedHero.health + " HP remaining");
+            
+        }
+        if(selectedHero.health <= 0)
+        {
+           Destroy(selectedHero.gameObject);
+        }
+        if(selectedMonster.health <= 0) 
+        {
+            Destroy(selectedMonster.gameObject);
+        }
         /* TODO: Write code below to decide the outcome of the fighting hero and monster characters in an interesting way.
             Some examples to test:
                 - Randomly select either the hero or monster to hit the other character.
@@ -153,7 +172,7 @@ public class BattleLogic : MonoBehaviour
             // Monster hits hero (HINT: See TakeDamage( amount ) method in CharacterStats script)
 
             // Check hero health.
-            if( hero.health <= 0f )
+            if( selectedHero.health <= 0f )
             {
                 // If the heros' health is less than or equal to zero, then destroy the hero and output 'the monster has defeated the hero'.
                 // HINT: Destroy( ... );
