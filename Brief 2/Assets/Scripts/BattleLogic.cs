@@ -146,7 +146,7 @@ public class BattleLogic : MonoBehaviour
                         OR characterTakingDamage.name + " was defeated by " + characterDoingDamage.name
         */
 
-
+        
         // EXAMPLE: Randomly choose either the the hero or the monster to hit the other.
         if( Random.value > 0.5f )
         {
