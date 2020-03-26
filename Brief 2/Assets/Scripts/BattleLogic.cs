@@ -117,7 +117,7 @@ public class BattleLogic : MonoBehaviour
 
         // TODO: Randomly select a hero and monster from the active heroes ( eg choosing one hero and one monster per round )
         CharacterStats hero = this.activeHeroes[ Random.Range( 0, this.activeHeroes.Count ) ];
-        // HINT: CharacterStats monster = ...
+        CharacterStats monster = this.activeMonsters[Random.Range(0, this.activeMonsters.Count)];
 
         // Dull the color of all active characters.
         this.SetAllActiveCharacterColors( Color.gray );
