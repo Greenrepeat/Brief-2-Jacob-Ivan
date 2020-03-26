@@ -144,10 +144,12 @@ public class BattleLogic : MonoBehaviour
         if(selectedHero.health <= 0)
         {
            Destroy(selectedHero.gameObject);
+            ouputLog.OutputText( selectedHero.name + " has been slain");
         }
         if(selectedMonster.health <= 0) 
         {
             Destroy(selectedMonster.gameObject);
+            ouputLog.OutputText(selectedMonster.name + " has been slain");
         }
         /* TODO: Write code below to decide the outcome of the fighting hero and monster characters in an interesting way.
             Some examples to test:
