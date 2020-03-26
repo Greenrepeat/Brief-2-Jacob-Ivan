@@ -792,8 +792,14 @@ MonoBehaviour:
   heroLibrary:
   - {fileID: 9014082831181497789, guid: a6a5b3c1846d8594e893f55e4fe32cfc, type: 3}
   - {fileID: 4587007153357169972, guid: b3fbf537a4792b64ba2a07f1b1108eae, type: 3}
+  - {fileID: 7402439695791817934, guid: f4d52516c2cdbb9469633d9f5920f095, type: 3}
+  - {fileID: 4587007153357169972, guid: b3fbf537a4792b64ba2a07f1b1108eae, type: 3}
+  - {fileID: 4587007153357169972, guid: b3fbf537a4792b64ba2a07f1b1108eae, type: 3}
   monsterLibrary:
   - {fileID: 8767433252133024603, guid: 5f4714565c2c5f542bbce71158dd7f09, type: 3}
+  - {fileID: 1728764422300266428, guid: f7499044a0c2ef540b91cad474b85fb2, type: 3}
+  - {fileID: 1728764422300266428, guid: f7499044a0c2ef540b91cad474b85fb2, type: 3}
+  - {fileID: 1728764422300266428, guid: f7499044a0c2ef540b91cad474b85fb2, type: 3}
   - {fileID: 1728764422300266428, guid: f7499044a0c2ef540b91cad474b85fb2, type: 3}
   heroSpawnPoints:
   - {fileID: 1036653964}
