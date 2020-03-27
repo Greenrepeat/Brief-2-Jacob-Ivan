@@ -553,7 +553,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 18011ded6f2d4854caed95671894c229, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a9be227d4e84909449808d64a201467b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -895,8 +895,8 @@ MonoBehaviour:
   - {fileID: 4673103590494963975, guid: f4199fde4ce07a547b2b04afacc94069, type: 3}
   - {fileID: 2956106282317315903, guid: e39d1ce36af249e4fb32141836144b3d, type: 3}
   - {fileID: 7849421907590736596, guid: 9097701648d4fbb4a8018c920f9ed11c, type: 3}
-  - {fileID: 2119828969193859466, guid: bc528758a70a1f541a4cfc10c8e15caa, type: 3}
-  - {fileID: 2119828969193859466, guid: bc528758a70a1f541a4cfc10c8e15caa, type: 3}
+  - {fileID: 4319395968258089539, guid: 9f7905580557fea4c83c13c0bb0afbd5, type: 3}
+  - {fileID: 5260226140639549662, guid: bc77e0fb30ee5be47a29f15d0ae91f4c, type: 3}
   monsterLibrary:
   - {fileID: 8767433252133024603, guid: 5f4714565c2c5f542bbce71158dd7f09, type: 3}
   - {fileID: 1728764422300266428, guid: f7499044a0c2ef540b91cad474b85fb2, type: 3}
@@ -905,9 +905,9 @@ MonoBehaviour:
   - {fileID: 1615989054706759257, guid: cd496836606f8b64fb497e45f35d1260, type: 3}
   - {fileID: 3814010336110923632, guid: e60630684cdb6634abd6f686a4a1fa5a, type: 3}
   - {fileID: 4818265477204640003, guid: 73f1053954b5a6c4ca39f004deb14324, type: 3}
-  - {fileID: 1615989054706759257, guid: cd496836606f8b64fb497e45f35d1260, type: 3}
-  - {fileID: 1615989054706759257, guid: cd496836606f8b64fb497e45f35d1260, type: 3}
-  - {fileID: 1615989054706759257, guid: cd496836606f8b64fb497e45f35d1260, type: 3}
+  - {fileID: 6044871453464404197, guid: d2d207bd678388a46809be9ede238246, type: 3}
+  - {fileID: 4086795324547571751, guid: 44b463c2c55d83b42bf45cb4a0d23f79, type: 3}
+  - {fileID: 8789186572422153025, guid: 5f2872673b7d8034597bf77af7769b8b, type: 3}
   heroSpawnPoints:
   - {fileID: 1036653964}
   - {fileID: 1406130232}
